@@ -1,21 +1,11 @@
 {
   "name": "comp2156",
   "version": "1.0.0",
-  "description": "\\#### COMP2156 – Developer Operations | 101372393 Nuure Osman",
+  "description": "",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"Warning: No tests created yet.\""
-}
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nuureskool/COMP2156.git"
+    "test": "echo \"Warning: No tests created yet.\""
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/nuureskool/COMP2156/issues"
-  },
-  "homepage": "https://github.com/nuureskool/COMP2156#readme"
+  "license": "ISC"
 }
