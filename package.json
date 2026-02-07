@@ -4,8 +4,8 @@
   "description": "\\#### COMP2156 – Developer Operations | 101372393 Nuure Osman",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "test": "echo \"Warning: No tests created yet.\""
+}
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nuureskool/COMP2156.git"
