@@ -1,4 +1,4 @@
-<h1>Welcome COMP2156 – Lab 05 Auto Deploy Test</h1>
+<h1>Welcome to COMP2156 – Lab 05 Auto Deploy Test</h1>
 
 import './App.css';
 import React, { useState } from "react";
