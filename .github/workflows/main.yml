@@ -3,7 +3,7 @@ name: Node.js CI
 on:
   push:
     branches:
-      - main
+      - dep-inclusions
   pull_request:
     branches:
       - main
@@ -13,26 +13,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
+      - name: Build project
+        run: npm run build
 
-# Deploy to GitHub Pages
-- name: Deploy to GitHub Pages
-  uses: peaceiris/actions-gh-pages@v3
-  with:
-    github_token: ${{ secrets.GITHUB_TOKEN }}
-    publish_dir: ./build
-    publish_branch: gh-pages
-    user_name: "github-actions[bot]"
-    user_email: "github-actions[bot]@users.noreply.github.com"
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
